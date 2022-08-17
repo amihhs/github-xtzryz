@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-200vh">
     <Logos mb-6 />
     <Suspense>
       <PageView />

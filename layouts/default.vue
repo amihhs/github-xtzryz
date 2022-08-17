@@ -23,7 +23,7 @@ if (isClient) {
         <div class="logo text-8 font-bold" sm="text-10">LOGO</div>
       </nuxt-link>
       <div class="setting">
-        <utils-dark-toggle />
+        aa
       </div>
     </div>
   </div>
