@@ -42,7 +42,7 @@ if (isClient) {
 </template>
 
 <style lang='scss' scoped>
-.default-header{
+.default-header {
   @apply fixed w-full top-0 z-999 shadow-lg backdrop-blur-md;
   @apply bg-white bg-opacity-60 dark:bg-dark-800;
   @apply h-15 sm:h-20;
