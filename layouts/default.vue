@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import { useWindowScroll,isClient } from '@vueuse/core'
+import { isClient, useWindowScroll } from '@vueuse/core'
 const isVisibleHeader = ref(false)
 if (isClient) {
   const { y } = useWindowScroll()
@@ -12,7 +12,6 @@ if (isClient) {
 }
 </script>
 
-
 <template>
   <div
     class="default-header transition"
@@ -20,7 +19,9 @@ if (isClient) {
   >
     <div flex items-center justify-between m-auto px-5 h-full max="w-1440px">
       <nuxt-link to="/">
-        <div class="logo text-8 font-bold" sm="text-10">LOGO</div>
+        <div class="logo text-8 font-bold" sm="text-10">
+          LOGO
+        </div>
       </nuxt-link>
       <div class="setting">
         aa
@@ -47,7 +48,7 @@ if (isClient) {
   @apply h-15 sm:h-20;
 }
 .default-header-place {
-  @apply w-full sticky top-0 z-1 h-15 sm:h-20;
+  @apply w-full top-0 z-1 h-15 sm:h-20;
 }
 .header-hidden{
   transform: translate3d(0,-100%,0);
